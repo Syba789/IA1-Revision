@@ -1,4 +1,4 @@
-gcc -g p3final.c
+ gcc -g p3final.c
  gdb a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
@@ -69,3 +69,11 @@ main () at p3final.c:28
 28    return 0;
 (gdb) n
 29  }
+(gdb) n
+__libc_start_main (main=0x55df1bc00816 <main>, argc=1, argv=0x7ffefe971df8, 
+    init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, 
+    stack_end=0x7ffefe971de8) at ../csu/libc-start.c:344
+344 ../csu/libc-start.c: No such file or directory.
+(gdb) n
+sum of 5 numbers is 15[Inferior 1 (process 2785) exited normally]
+(gdb) 
